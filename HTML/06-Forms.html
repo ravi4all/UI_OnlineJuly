@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- Registration
+    Login
+    Search
+    Post
+    Comment -->
+
+    <form action="login.html" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Enter Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pwd">Enter Password</label>
+                </td>
+                <td>
+                    <input type="password" name="userpwd" id="pwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Country</td>
+                <td>
+                    <select>
+                        <option>Select Country</option>
+                        <!-- <option value="ind">India</option>
+                        <option value="ch">China</option>
+                        <option value="aus">Australia</option>
+                        <option value="usa">USA</option>
+                        <option value="ger">Germany</option> -->
+                        
+                        <optgroup label="Asia">
+                            <option value="">India</option>
+                            <option value="">China</option>
+                            <option value="">Hongkong</option>
+                            <option value="">Srilanka</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="">Germany</option>
+                            <option value="">England</option>
+                            <option value="">Italy</option>
+                            <option value="">France</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Gender</td>
+                <td>
+                    <input type="radio" id="m" name="gender" value="m"> 
+                    <label for="m">Male</label>
+                    <input type="radio" name="gender" value="f" id="f">
+                    <label for="f">Female</label> 
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Pic</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Course</td>
+                <td>
+                    <input type="checkbox"> MCA
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> BBA
+                    <input type="checkbox"> MBA
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

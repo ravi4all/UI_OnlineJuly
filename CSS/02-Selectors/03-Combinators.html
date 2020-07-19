@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #parent_1 > h2 {
+            color: red;
+        } */
+
+        /* #parent_1 > h2 + .child h2 {
+            color: blue;
+        } */
+
+        /* #parent_1 + h2 {
+            color: red;
+        } */
+
+        #parent_1 ~ h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <!-- Combinator Operators
+    >, +, ~ 
+    -->
+
+    <div id="parent_1">
+        <h2>This heading is inside parent_1</h2>
+        <div class="child child_1">
+            <h2>This heading is inside parent_1 child_1</h2>
+        </div>
+        <h2>This heading is inside parent_1</h2>
+        <div class="child child_2">
+            <h2>This heading is inside parent_1 child_2</h2>
+        </div>
+        <h2>This heading is inside parent_1</h2>
+    </div>
+
+    <hr>
+
+    <h2>This heading is outside parent div</h2>
+    <h2>This heading is outside parent div</h2>
+    <h2>This heading is outside parent div</h2>
+    
+</body>
+</html>
