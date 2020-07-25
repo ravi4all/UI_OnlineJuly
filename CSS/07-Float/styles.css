@@ -1,0 +1,22 @@
+/* Clearfix */
+#parent:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col_1 {
+    width: 40%;
+    background-color: lightblue;
+    float: left;
+}
+
+.col_2 {
+    width: 40%;
+    background-color: lightcoral;
+    float: right;
+}
+
+.div_1 {
+    background-color: lightgray;
+}

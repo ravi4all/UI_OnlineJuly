@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #2874F0;
+    padding: 10px 0px;
+}
+
+#header a, #header span {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .logo {
+    width: 8%;
+    padding-top: 10px;
+}
+#header .logo img {
+    width: 100%;
+}
+
+#header .search {
+    width: 50%;
+    margin: 0px 50px 0px 10px;
+}
+#header .search input[type='text'] {
+    width: 90%;
+    height: 30px;
+}
+#header .search button {
+    height: 34px;
+}
+#header .login {
+    padding-top: 10px;
+    width: 8%;
+}
+#header .more {
+    padding-top: 10px;
+    margin: 0px 25px;
+    width: 8%;
+}
+#header .cart {
+    padding-top: 10px;
+}
