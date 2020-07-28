@@ -21,13 +21,34 @@
         }
         ul li {
             display: inline-block;
+            /* width: 12%; -> 12% of screen */
             width: 12%;
+            position: relative;
             text-align: center;
             background-color: lightgray;
-            padding: 10px;
         }
         ul li a {
             text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        ul li a:hover {
+            background-color: lightsteelblue;
+            color: #000;
+        }
+        .dropdown {
+            position: absolute;
+            background-color: lightblue;
+            /* width: 100%; (total width = 12%) */
+            width: 100%;
+            display: none;
+        }
+        .dropdown ul li {
+            display: block;
+            width: 100%;
+        }
+        ul li:hover .dropdown{
+            display: block;
         }
     </style>
 </head>
@@ -51,6 +72,15 @@
         </li>
         <li>
             <a href="#">Electronics</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">PC</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
         </li>
         <li>
             <a href="#">Men</a>
