@@ -1,0 +1,87 @@
+/* Global Settings */
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Generic Settings */
+#header {
+
+}
+#header .header_top {
+    
+}
+#header .header_top .global-nav {
+    width: 20%;
+}
+#header .header_top .global-links {
+    width: 60%;
+}
+#header .header_top .logo {
+    width: 15%;
+}
+#header .header_top .f2-f3-pages {
+    width: 70%;
+}
+#header .header_top .f2-f3-pages ul li {
+    display: inline-block;
+}
+
+#header .header_top .nav-links ul li {
+    display: inline-block;
+}
+
+#main-navigation {
+
+}
+
+#footer {
+
+}
+
+/* Page Specific Settings */
+
+/* Page 1 */
+
+/* Page-1 Section-1 */
+
+
+/* Page 2 */
