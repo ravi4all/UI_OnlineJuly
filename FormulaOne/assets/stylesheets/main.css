@@ -1,6 +1,7 @@
 /* Global Settings */
 body {
     margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 a {
@@ -43,11 +44,14 @@ p {
 }
 
 /* Generic Settings */
+.container-fluid {
+    padding: 0px 15px;
+}
 #header {
 
 }
 #header .header_top {
-    
+    padding: 10px 0px;
 }
 #header .header_top .global-nav {
     width: 20%;
@@ -63,10 +67,56 @@ p {
 }
 #header .header_top .f2-f3-pages ul li {
     display: inline-block;
+    margin: 0px 10px;
+}
+#header .header_top .f2-f3-pages ul li a {
+    color: #15151e;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 #header .header_top .nav-links ul li {
     display: inline-block;
+    margin: 0px 12px;
+}
+#header .header_top .nav-links ul li a {
+    color: #15151e;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+#header .header_top .nav-links ul li a:after {
+    content: "";
+    position: absolute;
+    border: 2px solid red;
+    width: 100%;
+    bottom: -10px;
+    left: 0px;
+    display: none;
+}
+
+#header .header_top .nav-links ul li:not(:last-child) a:hover:after {
+    display: block;
+}
+
+#header .header_top .user-actions {
+    width: 25%;
+}
+#header .header_top .user-actions a {
+    display: inline-block;
+    width: 38%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 12px;
+}
+#header .header_top .user-actions .sign-in {
+    background-color: #000;
+}
+#header .header_top .user-actions .subscribe {
+    background-color: #ff0000;
 }
 
 #main-navigation {
