@@ -119,8 +119,30 @@ p {
     background-color: #ff0000;
 }
 
-#main-navigation {
+#header .header_bottom {
+    background-color: #E10600;
+}
+#header .header_bottom a {
+    color: #fff;
+}
+#header .header_bottom .logo {
+    width: 15%;
+    padding-top: 20px;
+}
 
+#main-navigation {
+    width: 80%;
+    margin-left: 20px;
+}
+#main-navigation ul li {
+    display: inline-block;
+}
+#main-navigation ul li a {
+    padding: 20px;
+    display: block;
+}
+#main-navigation ul li a:hover {
+    background-color: #000;
 }
 
 #footer {
