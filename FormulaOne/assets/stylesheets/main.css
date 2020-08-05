@@ -126,6 +126,7 @@ p {
 
 #header .header_bottom {
     background-color: #E10600;
+    margin-bottom: 50px;
 }
 #header .header_bottom a {
     color: #fff;
@@ -230,7 +231,16 @@ p {
 
 /* Page-1 Section-1 */
 #section_1 .col-1 {
-    width: 50%;
+    width: 48%;
 }
+#section_1 .col-2 {
+    width: 48%;
+}
+#section_1 .col-2 .box {
+    display: inline-block;
+    width: 45%;
+    margin: 0px 5px;
+}
+
 
 /* Page 2 */
