@@ -229,6 +229,8 @@ p {
 /* Page 1 */
 
 /* Page-1 Section-1 */
-
+#section_1 .col-1 {
+    width: 50%;
+}
 
 /* Page 2 */
