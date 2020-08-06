@@ -54,6 +54,52 @@
                 </td>
             </tr>
             <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value=500 min="0" max="100" onchange="progress.value = value">
+                </td>
+                <td>
+                    <output id="output">500</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress id="progress" value="50" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter card num" 
+                    pattern="[a-z]\w+[0-9]\d+">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Phone Number</td>
+                <td>
+                    <input type="tel" placeholder="Enter your number">
+                </td>
+            </tr>
+            <tr>
+                <td>Search Here</td>
+                <td>
+                    <input type="search" placeholder="Search Here">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your comments</td>
+                <td>
+                    <textarea placeholder="Enter message" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
                 <td></td>
                 <td>
                     <input type="submit">
