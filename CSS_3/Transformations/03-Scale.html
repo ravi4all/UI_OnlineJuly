@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 400px;
+            width: 300px;
+            padding: 10px;
+            margin: 0 auto;
+            border: 2px solid red;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            height: inherit;
+            transition-duration: 2s;
+            transform: scale(0,0);
+        }
+        div:hover img {
+            /* transform: scaleX();    */
+            /* transform: scale(2,2) translateY(50px); */
+            transform: scale(1,1) rotateY(3600deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transform Scale</h1>
+
+    <div>
+        <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+    </div>
+    
+</body>
+</html>
