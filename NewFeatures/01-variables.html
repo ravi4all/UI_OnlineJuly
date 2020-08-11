@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: lightgreen;
+            --heading-color : red;
+            --para-color : blue;
+            --font-size : 16px;
+            --fallback : black;
+            --red : red;
+        }
+        body {
+            background-color: var(--primary-color);
+        }
+        h2 {
+            /* color: var(--heading-color, --fallback); */
+            color: var(--heading-color, var(--fallback, --red));
+            /* --font: 30px; */
+        }
+        p {
+            color: var(--para-color);
+            /* --font : 20px; */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Variables in CSS 3</h1>
+
+    <h2>This is heading</h2>
+    <h2>This is heading</h2>
+    <h2>This is heading</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet necessitatibus nemo nihil maxime aut iste suscipit nam quisquam accusamus repudiandae aperiam adipisci tempora corrupti corporis, quam quia a aliquid totam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet necessitatibus nemo nihil maxime aut iste suscipit nam quisquam accusamus repudiandae aperiam adipisci tempora corrupti corporis, quam quia a aliquid totam.
+    </p>
+    
+</body>
+</html>
