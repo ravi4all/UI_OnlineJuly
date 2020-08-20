@@ -1,0 +1,27 @@
+#sun {
+    background-image: url("https://lh3.googleusercontent.com/proxy/zkoe2L9Sn06o5lR2bXCyEHEPteO3W49JucuXoH-FIrubapG8ExJjT0GvNVpsKPraYr90JjJaXW8lXs8RsFYglS6OpTBcu1Xk85z_3trnFuk9QnigS6o");
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+    margin: 100px auto;
+}
+
+#earth {
+    background-image: url("../../images/00-22.gif");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    animation: earth 10s infinite linear;
+}
+@keyframes earth {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

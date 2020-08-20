@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+            animation: car 10s infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes car {
+            0% {
+                transform: translate(0px,0px);
+            }
+            20% {
+                transform: translate(1000px,0px);
+            }
+            25% {
+                transform: translate(1000px,0px) rotate(90deg);
+            }
+            50% {
+                transform: translate(1000px,400px) rotate(90deg);
+            }
+            55% {
+                transform: translate(1000px,400px) rotate(180deg);
+            }
+            75% {
+                transform: translate(0px,400px) rotate(180deg);
+            }
+            100% {
+                transform: translate(0px,0px) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="car.jpg" alt="car">
+    
+</body>
+</html>
