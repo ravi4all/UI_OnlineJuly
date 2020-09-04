@@ -1,0 +1,74 @@
+#header {
+    border: 1px solid red;
+}
+
+#header .row {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 10% 70%;
+    grid-template-areas: "logo nav login" 
+                         "logo search x";
+}
+.logo {
+    border: 1px solid black;
+    grid-area: logo;
+}
+
+img {
+    width: 100%;
+}
+
+#main-nav {
+    border: 1px solid blue;
+    grid-area: nav;
+    margin-bottom: 10px;
+}
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search {
+    grid-area: search;
+}
+.search input {
+    width: 100%;
+    height: 40px;
+}
+
+.login {
+    padding: 10px;
+    grid-area: login;
+    border: 1px solid green;
+}
+
+#content .row {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(6,1fr);
+}
+#content .row > div {
+    border: 1px solid red;
+    text-align: center;
+}
+.col_1 {
+    grid-column: 1/4;
+}
+.col_3 {
+    grid-column: 5/7;
+}
+.col_4 {
+    grid-row: 2/4;
+}
+.col_6 {
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+.col_7 {
+    grid-column: 4/7;
+}
+.col_9 {
+    grid-column: 4/6;
+}
