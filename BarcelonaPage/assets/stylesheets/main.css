@@ -1,0 +1,142 @@
+/* Global Settings */
+:root {
+    --yellow-color : #fdc52c;
+    --title-gradient: linear-gradient(90deg,#cd122d,#154284);
+    --red-text : #cd122d;
+}
+body {
+    margin: 0px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.justify-space-around {
+    justify-content: space-around;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/* Generic Settings */
+#header {
+    color: #fff;
+    background-color: #181733;
+}
+#header a {
+    color: #fff;
+}
+#header .grid {
+    grid-template-columns: 25% 40% 15% 10% 10%;
+    grid-template-areas: "logo follow login sites lang"
+                         "logo nav nav nav nav";
+    align-items: center;
+}
+#header .logo img {
+    width: 10%;
+}
+#header ul {
+    display: flex;
+}
+
+#header .logo {
+    grid-area: logo;
+    padding: 10px;
+}
+#header .follow {
+    grid-area: follow;
+}
+#header .login {
+    grid-area: login;
+}
+#header .language {
+    grid-area: lang;
+}
+#header .barca-sites {
+    grid-area: sites;
+}
+#header .nav {
+    grid-area: nav;
+}
+
+#header .nav .row {
+    justify-content: space-between;
+}
+#header .nav .search {
+    width: 8%;
+    padding: 20px;
+}
+#main-navigation {
+    width: 90%;
+}
+#main-navigation ul{
+    justify-content: space-between;
+}
+#main-navigation ul li a {
+    display: block;
+    padding: 20px;
+}
+
+
+#footer {
+
+}
+
+/* Page Specific Settings */
+
+/* Page 1 */
+
+/* Page-1 Section-1 */
+
+
+/* Page 2 */
