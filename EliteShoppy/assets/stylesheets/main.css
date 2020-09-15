@@ -1,0 +1,87 @@
+/* Global Settings */
+body {
+    margin: 0px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Generic Settings */
+#topbar {
+    background-color: #000000;
+}
+#topbar a, #topbar span {
+    color: #fff;
+    font-size: 13px;
+}
+#topbar i {
+    color: #2FDAB8;
+    font-size: 13px;
+    margin-right: 10px;
+}
+#topbar .row > div {
+    border-right: 1px solid #eee;
+    padding: 5px 0px;
+}
+
+#header {
+
+}
+
+#main-navigation {
+
+}
+
+#footer {
+
+}
+
+/* Page Specific Settings */
+
+/* Page 1 */
+
+/* Page-1 Section-1 */
+
+
+/* Page 2 */
