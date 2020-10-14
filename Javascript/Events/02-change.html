@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Change Event</h1>
+
+    <input type="text" onchange="validate(this)">
+    <span></span>
+
+    <script>
+        function validate(obj) {
+            var span = document.querySelector("span");
+            var username = obj.value;
+            if(username == "") {
+                span.innerHTML = "Please fill this field";
+                obj.style.border = "1px solid red";
+            }
+            else {
+                span.innerHTML = "";
+                obj.style.border = "1px solid black";
+            }
+        }
+    </script>
+    
+</body>
+</html>
