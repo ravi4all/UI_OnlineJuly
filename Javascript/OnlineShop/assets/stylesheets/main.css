@@ -1,0 +1,30 @@
+#products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#products li {
+    width: 23%;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#products li h4 {
+    font-size: 16px !important;
+}
+#products li > * {
+    width: 100%;
+}
+#products img {
+    width: 100%;
+    margin-bottom: 15px;
+}
