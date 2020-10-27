@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Need of AJAX</h1>
+
+    <button onclick="load()">Start Calculations</button>
+
+    <script>
+        function one() {
+            console.log("One Called...");
+        }
+        function two() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                console.log(this.readyState, this.status);
+                if(this.readyState == 4 && this.status == 200) {
+                    console.log("Two Called...");
+                }
+            }
+            // for(var i = 0; i < 100000000; i++) {
+            //     i += 1;
+            // }
+            xhttp.open('get', '');
+            xhttp.send();
+        }
+        function three() {
+            console.log("Three Called...");
+        }
+        function four() {
+            console.log("Four Called...");
+        }
+        function load() {
+            one();
+            two();
+            three();
+            four();
+        }
+    </script>
+    
+</body>
+</html>

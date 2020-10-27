@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Need of AJAX</h1>
+
+    <button onclick="load()">Load Data</button>
+
+    <script>
+        function load() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                console.log(this.readyState, this.status);
+                if(this.readyState == 4 && this.status == 200) {
+                    // console.log("Two Called...");
+                    // console.log(this.responseText);
+                    data = this.responseText;
+                }
+            }
+            xhttp.open('get', 'https://cricapi.com/api/playerStats?apikey=b7CYzlyYOrUCIIdbSlU753oGKN12&pid=35320');
+            xhttp.send();
+        }
+    </script>
+    
+</body>
+</html>
