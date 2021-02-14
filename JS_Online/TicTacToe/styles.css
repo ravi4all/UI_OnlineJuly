@@ -1,0 +1,17 @@
+.section_1 {
+    margin-bottom: 50px;
+}
+table {
+    margin: 0 auto;
+    display: none;
+}
+.btn {
+    background-color: red;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+}
+.btn:hover {
+    background-color: lightcoral;
+}
